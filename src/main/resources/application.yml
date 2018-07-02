@@ -1,0 +1,18 @@
+server:
+  port: 8089
+spring:
+  application:
+    name: SB-ADMIN
+security:
+  basic:
+    enabled: false
+management:
+  security:
+    enabled: false
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+  client:
+    registryFetchIntervalSeconds: 5
+    service-url:
+      defaultZone: http://oupeureka:8761/eureka/
